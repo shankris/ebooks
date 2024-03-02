@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 55px;
+  color: #d1d1d1;
+  background-color: #1e5174;
+}
+
+
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-shrink: 0;
+  width: 210px;
+}
+
+.headerIcon {
+  width: 28px;
+  padding: 0;
+}
+
+.headerLogo {
+  color: #8aa8ff;
+  font-size: 28px;
+  font-weight: 100;
+  margin: 0 0 0 6px;
+}
+
+.headerLogo span {
+  color: #d3d3d3
+}
+
+
+@media only screen and (max-width: 600px) {
+  .headerLogo {
+    font-size: 22px;
+  }
+}
+
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 80%;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .searchBox {
+    display: none;
+  }
+}
+
+input.search {
+  /* width: 500px; */
+  width: 90%;
+  color: #ffffff;
+  background-color: rgb(89, 139, 173);
+  box-shadow: none;
+  outline: none;
+  border: 1px solid transparent;
+  height: 32px;
+  padding: 2px 12px 2px 20px;
+  font-size: 16px;
+  font-weight: 100;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.searchIcon {
+  width: 24px;
+}
+
+.searchIconContainer {
+  background-color: rgb(89, 139, 173);
+  padding: 3px 8px 3px 0px;
+  height: 32px;
+  width: 40px;
+  /* border: 1px solid #000; */
+  border-radius: 0px 16px 16px 0;
+}
+
+input.search::placeholder {
+  color: rgb(231, 234, 236);
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.iconsRight, .searchResponsive {
+  width: 36px;
+  border-radius: 16px;
+  padding: 4px;
+  margin: 0 0 0 6px;
+  background-color: rgba(46, 101, 138, .3);
+  fill: #fff;
+  flex-shrink: 0;
+  transition: background-color ease-in .5s;
+}
+
+.iconsRight:hover, .searchResponsive:hover {
+  background-color: rgba(46, 101, 138, .9);
+}
+
+@media only screen and (min-width: 768px) {
+  .searchResponsive {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .iconBox {
+    width: 165px;
+  }
+}
+
+.iconsRight:last-child {
+  margin: 0 6px 0 6px;
+}
+
+/* @media only screen and (max-width: 768px) {
+
+  .iconsRight:last-child {
+    margin: 0 0 0 0;
+  }
+
+} */
