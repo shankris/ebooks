@@ -6,7 +6,7 @@ const Header = () => {
       <div className={`${classes.logoBox}`}>
         <img src='/img/icons/menu.svg' className={`${classes.headerIcon}`} alt='menu' />
         <div className={`${classes.headerLogo}`}>
-          Ebooks<span>Library</span>
+          Ebook<span>Library</span>
         </div>
       </div>
 

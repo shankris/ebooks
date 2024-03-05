@@ -2,12 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 
-  height: 55px;
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+
+  height: var(--headerHeight);
   color: #d1d1d1;
   background-color: #1e5174;
 }
-
 
 
 .logoBox {
@@ -24,16 +28,15 @@
 }
 
 .headerLogo {
-  color: #8aa8ff;
+  color: #ffffff;
   font-size: 28px;
   font-weight: 100;
   margin: 0 0 0 6px;
 }
 
 .headerLogo span {
-  color: #d3d3d3
+  color: #6c92ff;
 }
-
 
 @media only screen and (max-width: 600px) {
   .headerLogo {
@@ -62,7 +65,7 @@ input.search {
   /* width: 500px; */
   width: 90%;
   color: #ffffff;
-  background-color: rgb(89, 139, 173);
+  background-color: rgb(35, 98, 140);
   box-shadow: none;
   outline: none;
   border: 1px solid transparent;
@@ -78,7 +81,7 @@ input.search {
 }
 
 .searchIconContainer {
-  background-color: rgb(89, 139, 173);
+  background-color: rgb(39, 98, 138);
   padding: 3px 8px 3px 0px;
   height: 32px;
   width: 40px;

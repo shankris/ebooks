@@ -7,7 +7,7 @@
   --containerWidth: 1200px;
   --containerMaxWidth: 90%;
   --accentColor: #203060;
-  --headerHeight: 70px;
+  --headerHeight: 55px;
   --headerWidth: 100vw;
   --headerBg: #eee;
   --footerBg: #eee;
@@ -50,7 +50,7 @@ html {
 
 body {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   font-family: var(--fontStack);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -87,9 +87,10 @@ header {
 }
 
 main {
-  min-height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+  min-height: calc(100vh - var(--headerHeight));
   padding: var(--genericPadding);
   line-height: var(--line-height);
+  background-color: yellow;
 }
 
 footer {
